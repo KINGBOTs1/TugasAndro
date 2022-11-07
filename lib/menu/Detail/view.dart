@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:tugas/menu/Detail/makanan/bakso.dart';
 import 'controller.dart';
+import 'makanan/bakso.dart';
 
 class DetailMenuView extends StatefulWidget {
   const DetailMenuView({Key? key}) : super(key: key);
@@ -76,9 +78,17 @@ class _DetailMenuViewState extends DetailMenuControll {
             style:
                 TextStyle(height: 3, fontSize: 18, fontWeight: FontWeight.bold),
           ),
-          Image(
-              image: NetworkImage(
-                  'https://statik.tempo.co/data/2018/06/03/id_709908/709908_720.jpg')),
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const bakso()),
+              );
+            },
+            child: Image(
+                image: NetworkImage(
+                    'https://statik.tempo.co/data/2018/06/03/id_709908/709908_720.jpg')),
+          ),
           Text(
             '2.Sate',
             style:

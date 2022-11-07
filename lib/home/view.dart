@@ -26,8 +26,8 @@ class _HomeViewState extends HomeControll {
           children: [
             UserAccountsDrawerHeader(
               currentAccountPicture: Icon(
-                Icons.people,
-                size: 30,
+                Icons.account_circle,
+                size: 70,
                 color: Colors.amber,
               ),
               accountEmail: Text('ds767365@gmail.com',
@@ -45,7 +45,7 @@ class _HomeViewState extends HomeControll {
                         color: Colors.black, fontWeight: FontWeight.bold)),
                 leading: CircleAvatar(
                   backgroundColor: Colors.black,
-                  child: Icon(Icons.apps, color: Colors.amber),
+                  child: Icon(Icons.home, color: Colors.amber),
                 )),
             ListTile(
                 onTap: () => Navigator.of(context).pushNamed('/Foto'),

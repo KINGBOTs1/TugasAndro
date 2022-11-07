@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tugas/Menu/view.dart';
+import 'package:tugas/menu/view.dart';
 import 'home/view.dart';
 
 class HomeApps extends StatefulWidget {
